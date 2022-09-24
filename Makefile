@@ -2,7 +2,7 @@ IMAGE_TAG_NAME=letenk/altera-bookmarket:latest
 
 ## build_image: build app to image docker
 build_image:
-	docker build . -t ${IMAGE_TAG_NAME} -f docker/go/Dockerfile
+	docker build . -t ${IMAGE_TAG_NAME} -f Dockerfile
 
 ## push_image: push image to docker hub
 push_image:

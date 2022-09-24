@@ -53,7 +53,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.EC2_HOST_IP }}
           REMOTE_USER: ${{ secrets.EC2_USERNAME }}
         run: |
-          echo "$SSH_PRIVATE_KEY" > private_key && chmod 400 private_key
+          echo "$SSH_PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${REMOTE_USER}@${REMOTE_HOST} '
           
             #Now we have got the access of EC2 and we will start the deploy .

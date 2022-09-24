@@ -1,4 +1,4 @@
-IMAGE_TAG_NAME=letenk/altera-bookmarket:latest
+IMAGE_TAG_NAME=letenk/altera-bookmarket:3.0.0
 
 ## build_image: build app to image docker
 build_image:
